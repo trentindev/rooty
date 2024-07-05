@@ -1,4 +1,5 @@
 import Card from "../../components/Card";
+import CardsContainer from "../../components/Card/index";
 
 const freelanceProfiles = [
   {
@@ -21,15 +22,16 @@ const freelanceProfiles = [
 function Freelances() {
   return (
     <div>
-      <h1>Freelances 👩·💻👨·💻👩·💻</h1>
-      {freelanceProfiles.map((profile, index) => (
-        <Card
-          key={`${profile.name}-${index}`}
-          label={profile.jobTitle}
-          picture={profile.picture}
-          title={profile.name}
-        />
-      ))}
+      <h1>Freelances 👩‍💻👨‍💻👩‍💻</h1>
+      <CardsContainer>
+        {freelanceProfiles.map((profile, index) => (
+          <Card
+            key={`${profile.name}-${index}`}
+            label={profile.jobTitle}
+            title={profile.name}
+          />
+        ))}
+      </CardsContainer>
     </div>
   );
 }
