@@ -21,7 +21,7 @@ function Header() {
       <StyledLink to="/survey/1" $isFullLinks>
         Questionnaire
       </StyledLink>
-      <StyledLink to="/freelances">Profils</StyledLink>
+      <StyledLink to="/profils">Profils</StyledLink>
     </nav>
   );
 }

@@ -45,7 +45,10 @@ function Card({ label, title, picture }) {
   return (
     <CardWrapper>
       <CardLabel>{label}</CardLabel>
-      <CardImage src={picture} alt="freelance" />
+      <CardImage
+        src={picture || "../../../assets/profile.png"}
+        alt="freelance"
+      />
       <CardTitle>{title}</CardTitle>
     </CardWrapper>
   );
